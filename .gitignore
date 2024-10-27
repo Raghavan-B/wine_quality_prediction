@@ -1,1 +1,3 @@
-winevenv
+winevenv/
+artifacts/
+logs/
