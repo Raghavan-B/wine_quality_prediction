@@ -1,6 +1,6 @@
 from src.wine_quality_prediction.constants import *
 from src.wine_quality_prediction.utils.common import read_yaml,create_directories
-from src.wine_quality_prediction.entity.config_entity import (DataIngestionConfig,DataValidationConfig)
+from src.wine_quality_prediction.entity.config_entity import (DataIngestionConfig,DataValidationConfig,DataTransformationConfig)
 class ConfigurationManager:
     def __init__(self,
                  config_filepath = CONFIG_FILE_PATH,
@@ -23,6 +23,7 @@ class ConfigurationManager:
             unzip_dir=config.unzip_dir
         )
         return data_ingestion_config
+    
     def get_data_validation_config(self) -> DataValidationConfig:
         config = self.config.data_validation
         schema = self.schema.COLUMNS
@@ -35,3 +36,13 @@ class ConfigurationManager:
             all_schema= schema
         )
         return data_validation_config
+
+    def get_data_transformation_config(self) -> DataTransformationConfig:
+        config = self.config.data_transformation
+        create_directories([config.root_dir])
+
+        data_transformation_config = DataTransformationConfig(
+            root_dir= config.root_dir,
+            data_path= config.data_path
+        )
+        return data_transformation_config

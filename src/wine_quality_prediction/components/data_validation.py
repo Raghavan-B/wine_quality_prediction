@@ -1,5 +1,4 @@
 import os
-from src.wine_quality_prediction.entity.config_entity import DataIngestionConfig
 from src.wine_quality_prediction import logger
 import pandas as pd
 from src.wine_quality_prediction.config.configuration import DataValidationConfig
