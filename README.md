@@ -7,7 +7,7 @@ End to End wine quality prediction application with MLOPS
 2. Data Validation
 3. Data transformation
 4. Model trainer
-5. Model Evaluation
+5. Model Evaluation -MLFLOW AND DAGSHUB
 
 ## Workflows
 1. Update config.yaml 
