@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Raghavan/Documents/wine_quality_prediction/mlruns/0/ac12de00c1e44067ab1e99473e809631/artifacts
+end_time: 1730219282349
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ac12de00c1e44067ab1e99473e809631
+run_name: orderly-owl-373
+run_uuid: ac12de00c1e44067ab1e99473e809631
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730219279418
+status: 3
+tags: []
+user_id: Raghavan
